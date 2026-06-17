@@ -18,25 +18,14 @@ description text
 select*from netflix limit 10;
 update netflix set cast='unknown'
 where cast is null or cast ='';
-# DATA CLEANING 
+
+# Questions
 
 # Q1. HOW MANY RECORDS HAVE MISSING DIRECTOR INFORMATION?
 select count(*) from netflix where director is null or director = '';
 
 # Q2. HOW MANY RECORDS HAVE MISSING DIRECTOR INFORMATION?
 select count(*) from netflix where country is null or country = '';
-
-# REPLACED NULL VALUES WITH UNKNOWN  
-update netflix set cast='unknown'
-where cast is null or cast ='';
-
-update netflix set country='unknown'
-where country is null or country ='';
-
-update netflix set director='unknown'
-where director is null or director='';
-
-#  DATA ANALYSIS
 
 # Q3. HOW MANY MOVIES AND TV SHOWS ARE AVAILABLE ON NETFLIX ?
 select type,count(*) as total from netflix group by type;
