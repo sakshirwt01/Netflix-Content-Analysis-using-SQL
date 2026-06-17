@@ -38,15 +38,6 @@ The dataset contains information such as:
 * Duration
 * Genre
 
-## 🧹 Data Cleaning
-
-Before performing analysis, the following data-cleaning steps were completed:
-
-* Identified missing values in the Director column.
-* Identified missing values in the Country column.
-* Replaced NULL values with "Unknown".
-* Verified that no missing values remained in the cleaned columns.
-
 ## 📊 Business Questions Solved
 
 1. How many Movies and TV Shows are available on Netflix?
